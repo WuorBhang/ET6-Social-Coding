@@ -26,3 +26,16 @@ Apply Boolean law to simplify it.
 Interpret what the final expression means in the context of allowing or blocking a login attempt.
 
 """
+# Define the Boolean variables
+A = True  # User provided correct login credentials
+B = True  # Login attempt is from a trusted device
+
+# Original Boolean expression
+original_expression = not (A and (B or not B))
+
+# Simplified Boolean expression
+simplified_expression = not A
+
+# Print results
+print("Original Expression:", original_expression)
+print("Simplified Expression:", simplified_expression)
